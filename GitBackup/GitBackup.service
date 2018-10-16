@@ -1,0 +1,13 @@
+[Unit]
+Description=GitBackup
+After=rc-local.service
+
+[Service]
+Type=simple
+User=root
+Group=pi
+ExecStart=/bin/bash /usr/lib/systemd/system/GitBackup/GitBackup_start.sh 
+Restart=always
+
+[Install]
+WantedBy=multi-user.target 

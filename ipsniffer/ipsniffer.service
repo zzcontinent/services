@@ -1,0 +1,14 @@
+[Unit]
+Description=ipsniffer
+After=rc-local.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/lib/systemd/system/ipsniffer/
+ExecStart=/bin/bash /usr/lib/systemd/system/ipsniffer/ipsniffer_start.sh 
+Restart=always
+
+[Install]
+WantedBy=multi-user.target 
