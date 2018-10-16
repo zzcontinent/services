@@ -22,6 +22,6 @@ uninstall:
 	systemctl disable $(JOB_NAME).service
 	for name in $(FILES); \
 	do \
-	rm -i -f $(SERVICE_DIR)$$name; \
+	rm -f $(SERVICE_DIR)$$name; \
 	done
-	rm -i -f $(SERVICE_ETC_LS_FILE) 
+	rm -f $(SERVICE_ETC_LS_FILE) 
