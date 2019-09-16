@@ -1,3 +1,3 @@
 #!/bin/bash
-deluged 2>&1 
+deluged -d 2>&1 
 exit 0
